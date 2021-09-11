@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-bre">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+   
+
+    <!--Resposivo-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--Owl CSS-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>NETFLIX CLONE</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="a">Início</a>
+                <a href="a">Séries</a>
+                <a href="a">Filmes</a>
+                <a href="a">Documentários</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">GAME OF THRONES</h3>
+                <p class="descricao"> Em uma terra onde os verões podem durar vários anos e o inverno toda uma vida, sete nobres famílias lutam pelo controle da mítica terra de Westeros, dividida depois de uma guerra. Num cenário que lembra a Europa medieval, reis, rainhas, cavaleiros e renegados usam todos os meios possíveis em um jogo político pela disputa do Trono de Ferro, o símbolo do poder absoluto.</p>
+                <div class="iframe" id="hide">
+                    <div class="fechar" onclick="mudarEstado('hide')">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+                <iframe src="filmeprincipal.html" height=100% width=100% frameborder=0 style="border-radius: 10px" title="Iframe filme principal">
+                </iframe>
+                </div>
+                <div class="botoes">
+                    <a href="https://www.youtube.com/watch?v=gG1viFNRhXc">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    </a>
+                    <button role="button" class="botao" onclick="mudarEstado('hide')">
+                        <i class="fas fa-info"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+                        
+            <!--<div class="titulo-carossel">
+                Minha Lista
+            </div> -->
+
+            </div>
+            <div class="titulo-carossel">
+                Minha Lista
+            </div>
+        </div>
+    
+    </main>
+    <!-- <div class="titulo-carrosel">
+        Lançamentos
+    </div> -->
+    <div class="carrosel">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="style/img/min01-prisonbreak.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="style/img/min02-GodDoctot.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="style/img/min03-Loki.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="style/img/min04-vn.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="style/img/min05-sv.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="style/img/min06-sn.jpg" alt="" srcset="">
+            </div>
+        </div>
+
+        <div class="titulo-carossel2">
+            Assistir Novamente
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="style/img/min01-prisonbreak.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="style/img/min02-GodDoctot.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="style/img/min03-Loki.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="style/img/min04-vn.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="style/img/min05-sv.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="style/img/min06-sn.jpg" alt="" srcset="">
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/cead05cdd4.js" crossorigin="anonymous"></script>
+    <!--Script Owl-->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/setup.js"></script>
+
+</body>
+</html>
